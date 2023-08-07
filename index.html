@@ -31,11 +31,47 @@
             background-color: rgb(54, 54, 54);
             color: white;
         }
+        .cw-button {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: 1px solid white;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            background-color: rgb(54, 54, 54);
+            color: white;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        .cw-button:hover 
+        {
+            border-color: rgb(3, 255, 36);
+            color:rgb(3, 255, 36);
+        }
+
+        .vertical-div 
+        {
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <textarea class="text-area" placeholder="Enter your text here..."></textarea>
+        <div class="vertical-div ">
+            <textarea class="text-area" id="writerContent" placeholder="Enter your text here..."></textarea>
+            <div style="align-self: center;">
+                <button class="cw-button" id="saveButton">Save</button>
+                <button class="cw-button" id="openFile">Open File</button>
+            </div>
+        </div>
     </div>
 </body>
+
+<script src="main.js"></script>
+
 </html>
