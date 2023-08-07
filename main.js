@@ -33,7 +33,6 @@ document.getElementById("openFile").addEventListener("click", function()
             var text = reader.result;
             
             writerContent.value = text;
-            // Do something with the text
         };
     
         reader.readAsText(file);
